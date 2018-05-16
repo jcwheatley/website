@@ -1,0 +1,214 @@
+@font-face {
+  font-family: 'BebasNeue';
+  src:  url('homeFiles/files/BebasNeue.woff2') format('woff2'),
+        url('homeFiles/files/BebasNeue.woff') format('woff')
+  format('svg');
+  font-weight: normal;
+}
+
+.home{
+	background-color: #5E5E5E;
+	font-family: 'BebasNeue';
+}
+
+body{
+  font-family: 'BebasNeue';
+}
+
+.container{
+
+}
+
+.wrapper{
+  display:grid;
+  grid-template-columns: 1fr 9fr;
+}
+
+nav{
+	font-size: 30px;
+}
+
+ul.nav{
+	width: 70%;
+	margin:auto;
+    padding:0;
+    list-style:none;
+    text-align:center;
+}
+
+.nav li{
+	display:inline-block;
+    margin: 0 15 0 15;
+}
+
+.nav a{
+	text-decoration: none;
+	text-align:center;
+	margin: auto;
+    color: black;
+}
+
+.nav a:hover{
+	text-decoration: underline;
+}
+
+
+ul.topnav{
+  padding-left: 0;
+  padding-top: 13px;
+  list-style:none;
+  text-align:left;
+}
+
+.topnav li{
+  display:inline-block;
+  margin:15;
+  padding:0;
+}
+
+.topnav a{
+	font-size: 25;
+	text-decoration: none;
+    display:block;
+    color: black;
+}
+
+.topnav a:hover{
+	text-decoration: underline;
+}
+
+.logo{
+	margin: 10px;
+	width: 100px;
+}
+
+.about{
+	background-color: white;
+}
+
+.cutout{
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	width: 45%;
+}
+
+.one{
+	font-family: Proxima Nova;
+	position: fixed;
+	color: black;
+	font-size: 30px;
+	top: 32%;
+	left: 10%;
+	text-decoration: none;
+}
+
+.two{
+	font-family: Proxima Nova;
+	position: fixed;
+	color: black;
+	font-size: 30px;
+	top: 28%;
+	left: 40%;
+	text-decoration: none;
+}
+
+.three{
+	font-family: Proxima Nova;
+	position: fixed;
+	color: black;
+	font-size: 30px;
+	top: 75%;
+	left: 13%;
+	text-decoration: none;
+}
+
+.four{
+	font-family: Proxima Nova;
+	position: fixed;
+	color: black;
+	font-size: 30px;
+	top: 56%;
+	left: 25%;
+	text-decoration: none;
+}
+
+
+
+.hello{
+	font-size: 60px;
+	font-family: Proxima Nova;
+	position: fixed;
+	bottom: 28%;
+	right: 35%;
+}
+
+.experience{
+	margin: auto;
+	width: 50%;
+
+}
+
+h3{
+  font-family: Proxima Nova;
+  text-align: center;
+}
+
+.name{
+  font-family: 'BebasNeue';
+	font-size: 100;
+	text-align: center;
+	margin-top: 10%;
+	margin-bottom: 10;
+}
+
+.contact{
+  font-family: Proxima Nova;
+  margin-top: 10%;
+	text-align: center;
+  font-size: 18px;
+}
+
+.projects{
+  margin: 20 10;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1em;
+  text-align: center;
+
+}
+
+.projects > div {
+  padding: 1em;
+  background-color: #eee;
+  border-radius: 7px;
+}
+
+ul.project_details{
+  list-style:none;
+  font-family: Proxima Nova;
+  font-size: 16px;
+}
+
+.project_title{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.tilePic{
+  object-fit: contain;
+  width: 60%;
+}
+
+.bio{
+  margin-top: 5%;
+  margin-left: 10px;
+}
+
+p{
+  font-family: Proxima Nova;
+}
+
+span{
+	color: white;
+}
