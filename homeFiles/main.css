@@ -188,7 +188,9 @@ h3{
 }
 
 ul.project_details{
-  list-style:none;
+  text-align: center;
+  padding-left: 0;
+  list-style: none;
   font-family: Helvetica, Proxima Nova;
   font-size: 16px;
 }
