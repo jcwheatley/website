@@ -8,11 +8,13 @@
 
 .home{
 	background-color: #5E5E5E;
-	font-family: 'BebasNeue';
+	font-family: BebasNeue, Helvetica;
+  font-weight: bold;
+  font-size: 15px;
 }
 
 body{
-  font-family: 'BebasNeue';
+  font-family: Helvetica, 'BebasNeue';
 }
 
 .container{
@@ -124,7 +126,7 @@ ul.topnav{
 }
 
 .four{
-	font-family: Proxima Nova;
+	font-family: Helvetica, Proxima Nova;
 	position: fixed;
 	color: black;
 	font-size: 30px;
@@ -137,7 +139,7 @@ ul.topnav{
 
 .hello{
 	font-size: 60px;
-	font-family: Proxima Nova;
+	font-family: Helvetica, Proxima Nova;
 	position: fixed;
 	bottom: 28%;
 	right: 35%;
@@ -155,15 +157,16 @@ h3{
 }
 
 .name{
-  font-family: 'BebasNeue';
-	font-size: 100;
+  font-family: Helvetica, 'BebasNeue';
+  font-weight: bold;
+	font-size: 70;
 	text-align: center;
 	margin-top: 10%;
 	margin-bottom: 10;
 }
 
 .contact{
-  font-family: Proxima Nova;
+  font-family: Helvetica, Proxima Nova;
   margin-top: 10%;
 	text-align: center;
   font-size: 18px;
@@ -186,7 +189,7 @@ h3{
 
 ul.project_details{
   list-style:none;
-  font-family: Proxima Nova;
+  font-family: Helvetica, Proxima Nova;
   font-size: 16px;
 }
 
@@ -206,7 +209,7 @@ ul.project_details{
 }
 
 p{
-  font-family: Proxima Nova;
+  font-family: Helvetica, Proxima Nova;
 }
 
 span{
