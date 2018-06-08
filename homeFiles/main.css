@@ -73,14 +73,16 @@ span{
 }
 
 ul.project_details{
-  text-align: center;
-  padding-left: 0;
+  line-height: 1.33;
+  text-align: left;
+  padding-left: 10px;
   list-style: none;
   font-family: Helvetica, Proxima Nova;
   font-size: 16px;
 }
 
 .project_title{
+  text-align: center;
   font-size: 18px;
   font-weight: bold;
 }
@@ -165,20 +167,20 @@ ul.topnav{
 /* ========== */
 
 /* ARROW CSS */
-/* .arrow {
+.arrow {
   box-sizing: border-box;
-  height: 6vw;
-  width: 6vw;
+  height: 4vw;
+  width: 4vw;
   border-style: solid;
   border-color: white;
-  border-width: 0px 3px 3px 0px;
+  border-width: 0px 6px 6px 0px;
   transform: rotate(45deg);
   transition: border-width 150ms ease-in-out;
 }
 
 .arrow:hover {
-  border-bottom-width: 6px;
-  border-right-width: 6px;
+  border-bottom-width: 10px;
+  border-right-width: 10px;
 }
 
 .arrowcontainer {
@@ -192,7 +194,7 @@ ul.topnav{
 #blog {
   background: white;
   height: 100vh;
-} */
+}
 /* ARROW CSS */
 
 /* ALTERNATE ABOUT PAGE CSS */
