@@ -57,6 +57,27 @@ body{
     margin: auto;
 }
 
+.left-column h3{
+    font-size: 15pt;
+    letter-spacing: 5px;    /* KEARNING */
+}
+
+.left-column .tags{
+    font-size: 12pt;
+    font-style: italic;
+}
+
+.left-column .site{
+    font-size: 12pt;
+    font-style: italic;
+    color: #CD9B2B;
+}
+
+.left-column .copy{
+    font-size: 12pt;
+    color: #8f8f8f;
+}
+
 .right-column{
     width: 50%;
     float: right;
@@ -387,6 +408,68 @@ li.special{
 li.dot{
     margin-left: 55%;
 }
+
+/* CONTACT PAGE */
+.contact-wrapper{
+    z-index: 1;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    width: 33%;
+    height: 100vh;
+    max-width: 1170px;
+}
+
+.contact-wrapper form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-wrapper form .full{
+    grid-column: 1 / 3;
+}
+
+.contact-wrapper form p{
+    margin: 0;
+}
+
+.contact-wrapper form button, .contact-wrapper form input, .contact-wrapper form textarea{
+    width: 100%;
+}
+
+.contact-wrapper form button{
+    color: #CD9B2B;
+    border: 0;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.contact-wrapper input, .contact-wrapper textarea, .contact-wrapper button{
+    border: 0;
+    border-bottom: 1px solid black;
+    outline: none !important;
+}
+
+.contact-wrapper input{
+    padding: 8px;
+    padding-top: 15px;
+}
+
+.contact-wrapper textarea{
+    padding-top: 15px;
+    padding-left: 8px;
+    resize: none;
+}
+
+
+input::placeholder, textarea::placeholder {
+    color: #8f8f8f;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    overflow: hidden;
+  }
 
 @media(max-width:768px){
     body{
