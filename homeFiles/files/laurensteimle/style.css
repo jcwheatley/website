@@ -33,7 +33,6 @@ body{
 }
 
 .projects-wrapper{
-    padding-top: 8%;
     z-index: 1;
     position: absolute;
     top: 0;
@@ -44,21 +43,25 @@ body{
 
 .projects{
     width: 100%;
-    padding-left: 5%;
+    padding-left: 9%;
     padding-right: 5%;
+    margin-top: 10%;
     display: inline-block;
+    background-color: #f2f2f2;
 }
 
 .left-column{
-    padding-top: 5%;
-    width: 25%;
+    width: 39%;
     float: left;
+    vertical-align: baseline;
+    margin: auto;
 }
 
 .right-column{
     width: 50%;
     float: right;
     position: relative;
+    vertical-align: baseline;
 }
 
 #slider, .slide-content{
@@ -70,35 +73,211 @@ body{
     overflow-x: hidden;
 }
 
-.slide{
+.slide, .fondre, .papercrown, .calomiris, .ee, .madison, .navy{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
+
+/* 740 pics */
 .slide1{
-    background-image: url('media/image1.png');
+    background-image: url('media/740/740-1.jpg');
 }
 
 .slide2{
-    background-image: url('media/image2.png');
+    background-image: url('media/740/740-2.jpg');
 }
 
 .slide3{
-    background-image: url('media/image3.png');
+    background-image: url('media/740/740-3.jpg');
 }
 
 .slide4{
-    background-image: url('media/image4.png');
+    background-image: url('media/740/740-4.jpg');
 }
 
 .slide5{
-    background-image: url('media/image5.png');
+    background-image: url('media/740/740-5.jpg');
 }
 
 .slide6{
-    background-image: url('media/image6.png');
+    background-image: url('media/740/740-6.jpg');
 }
+
+.slide7{
+    background-image: url('media/740/740-7.jpg');
+}
+
+.slide8{
+    background-image: url('media/740/740-8.jpg');
+}
+
+
+/* Fondre pics */
+.fondre1{
+    background-image: url('media/Fondre/Fondre1.jpg');
+}
+
+.fondre2{
+    background-image: url('media/Fondre/Fondre2.jpg');
+}
+
+.fondre3{
+    background-image: url('media/Fondre/Fondre3.jpg');
+}
+
+.fondre4{
+    background-image: url('media/Fondre/Fondre4.jpg');
+}
+
+.fondre5{
+    background-image: url('media/Fondre/Fondre5.jpg');
+}
+
+.fondre6{
+    background-image: url('media/Fondre/Fondre6.jpg');
+}
+
+.fondre7{
+    background-image: url('media/Fondre/Fondre7.jpg');
+}
+
+.fondre8{
+    background-image: url('media/Fondre/Fondre8.jpg');
+}
+
+.fondre9{
+    background-image: url('media/Fondre/Fondre9.jpg');
+}
+
+
+/* Papercrown */
+.papercrown1{
+    background-image: url('media/PaperCrown/pc1.jpg');
+}
+
+.papercrown2{
+    background-image: url('media/PaperCrown/pc2.jpg');
+}
+
+.papercrown3{
+    background-image: url('media/PaperCrown/pc3.jpg');
+}
+
+.papercrown4{
+    background-image: url('media/PaperCrown/pc4.jpg');
+}
+
+.papercrown5{
+    background-image: url('media/PaperCrown/pc5.jpg');
+}
+
+.papercrown6{
+    background-image: url('media/PaperCrown/pc6.jpg');
+}
+
+.papercrown7{
+    background-image: url('media/PaperCrown/pc7.jpg');
+}
+
+
+
+/* CALOMIRIS PHOTOS */
+
+.calomiris1{
+    background-image: url('media/Calomiris/calomiris1.jpg');
+}
+
+.calomiris2{
+    background-image: url('media/Calomiris/calomiris2.jpg');
+}
+
+.calomiris3{
+    background-image: url('media/Calomiris/calomiris3.png');
+}
+
+.calomiris4{
+    background-image: url('media/Calomiris/calomiris4.png');
+}
+
+
+
+/* Ellsworth and Ernest */
+.ee1{
+    background-image: url('media/EandE/ee1.jpg');
+}
+
+.ee2{
+    background-image: url('media/EandE/ee2.jpg');
+}
+
+.ee3{
+    background-image: url('media/EandE/ee3.jpg');
+}
+
+.ee4{
+    background-image: url('media/EandE/ee4.jpg');
+}
+
+.ee5{
+    background-image: url('media/EandE/ee5.jpg');
+}
+
+
+
+/* Madison */
+.madison1{
+    background-image: url('media/Madison/madison1.jpg');
+}
+
+.madison2{
+    background-image: url('media/Madison/madison2.jpg');
+}
+
+.madison3{
+    background-image: url('media/Madison/madison3.jpg');
+}
+
+.madison4{
+    background-image: url('media/Madison/madison4.jpg');
+}
+
+.madison5{
+    background-image: url('media/Madison/madison5.PNG');
+}
+
+.madison6{
+    background-image: url('media/Madison/madison6.PNG');
+}
+
+.madison7{
+    background-image: url('media/Madison/madison7.PNG');
+}
+
+
+/* Navy League */
+.navy1{
+    background-image: url('media/NavyLeague/navy1.jpg')
+}
+
+.navy2{
+    background-image: url('media/NavyLeague/navy2.jpg')
+}
+
+.navy3{
+    background-image: url('media/NavyLeague/navy3.jpg')
+}
+
+.navy4{
+    background-image: url('media/NavyLeague/navy4.jpg')
+}
+
+.navy5{
+    background-image: url('media/NavyLeague/navy5.jpg')
+}
+
+
 
 .slide-content{
     display: flex;
@@ -118,18 +297,18 @@ body{
     border-style: solid;
 }
 
-#arrow-left{
-    border-width: 30px 40px 30px 0;
+#arrow-left, #arrow2-left, #arrow3-left, #arrow4-left, #arrow5-left, #arrow6-left, #arrow7-left{
+    border-width: 20px 30px 20px 0;
     border-color: transparent #fff transparent transparent;
     left:0;
-    margin-left: 30px;
+    margin-left: 15px;
 }
 
-#arrow-right{
-    border-width: 30px 0 30px 40px;
+#arrow-right, #arrow2-right, #arrow3-right, #arrow4-right, #arrow5-right, #arrow6-right, #arrow7-right{
+    border-width: 20px 0 20px 30px;
     border-color: transparent transparent transparent #fff;
     right:0;
-    margin-right: 30px;
+    margin-right: 15px;
 }
 
 .container{
@@ -211,7 +390,7 @@ li.dot{
 
 @media(max-width:768px){
     body{
-        background-color: red;
+        /* background-color: red; */
     }
 
 }
