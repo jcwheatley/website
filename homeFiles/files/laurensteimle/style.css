@@ -443,6 +443,7 @@ li.dot{
     text-transform: uppercase;
     font-weight: bolder;
     font-size: 15px;
+    cursor: pointer;
 }
 
 .contact-wrapper input, .contact-wrapper textarea, .contact-wrapper button{
@@ -615,13 +616,39 @@ input::placeholder, textarea::placeholder {
     font-size: 12px;
 }
 
+/* HIDDEN FOR MOBILE */
+
 .mobile-logo{
+    display: none;
+}
+
+
+label{
+    margin: 0 25px 0 0;
+    font-size: 40px;
+    line-height: 70px;
+    display: none;
+    float: right;
+}
+
+#toggle{
     display: none;
 }
 
 
 
 @media(max-width:768px){
+
+    .left-panel{
+        width: 0%;
+    }
+
+    .video-wrapper{
+        width: 100%;
+        margin-left: 0;
+        padding-left: 0;
+        left: 0;
+    }
 
     .home-body{
         background: #CD9B2B;
@@ -641,18 +668,52 @@ input::placeholder, textarea::placeholder {
 
     .mobile-logo{
         display: block;
-        width: 75%;
-        padding-top: 50%;
+        width: 100%;
+        padding: 50% 15% 0 15%;
     }
 
-    .left-panel{
-        background: #CD9B2B;
+    .mobile-menu-icon{
+        position: fixed;
+        top: 0;
+        right: 0;
     }
+
+    .mobile-nav{
+        text-align: center;
+        margin: 0 30px 0 0;
+        width: 100%;
+        display: none;
+    }
+
+    .mobile-nav a{
+        display: block;
+        text-decoration: none;
+        color: black;
+        margin: 0 10px;
+        line-height: 70px;
+    }
+
+    label{
+        display: block;
+        cursor: pointer;
+    }
+
+    #toggle:checked + .mobile-nav{
+        display: block;
+        /* background-color: rgba(255,255,255, .75); */
+        background-color: white;
+        height: 100%;
+        padding-top: 25%;
+        font-size: 20px;
+
+    }
+
+
 
     /* for testing purposes only */
-    nav{
+    /* nav{
         display: block;
         background: #CD9B2B;
-    }
+    } */
 
 }
