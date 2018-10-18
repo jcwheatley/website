@@ -10,16 +10,21 @@
 <body id="grey-theme">
     <header class="v-header container">
         <div class="projects-wrapper" id="grey-theme">
-                <label class="mobile-menu-icon" for="toggle">&#9776</label>
-                <input class="mobile-menu-icon" type="checkbox" id="toggle">
-                <div class="mobile-nav">
-                    <a class="current-mobile" href="index.html">home</a>
-                    <a href="projects.html">projects</a>
+
+            <span class="burger-menu" onclick="openNav()">&#9776</span>
+
+            <div id="mobile-nav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="index.html">home</a>
+                    <a id="current-mobile" href="projects.html">projects</a>
                     <a href="photo.html">photo</a>
                     <a href="about.html">about</a>
                     <!-- <a href="updates.html">updates</a> -->
                     <a href="contact.html">contact</a>
                 </div>
+            </div>
+
             <div class = "projects">
                 <div class="left-column">
                     <img src="media/logos/740.png" alt="image">
@@ -802,6 +807,17 @@
             slideRight7();
         });
         startSlide7();
+    </script>
+
+<!-- MOBILE NAV MENU JS -->
+    <script>
+        function openNav() {
+            document.getElementById("mobile-nav").style.height = "100%";
+        }
+        
+        function closeNav() {
+            document.getElementById("mobile-nav").style.height = "0%";
+        }
     </script>
 
     

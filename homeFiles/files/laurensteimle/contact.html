@@ -10,32 +10,38 @@
 <body>
     <header class="v-header container">
         <div class="contact-wrapper">
-            <label class="mobile-menu-icon" for="toggle">&#9776</label>
-            <input class="mobile-menu-icon" type="checkbox" id="toggle">
-            <div class="mobile-nav">
-                <a class="current-mobile" href="index.html">home</a>
-                <a href="projects.html">projects</a>
-                <a href="photo.html">photo</a>
-                <a href="about.html">about</a>
-                <!-- <a href="updates.html">updates</a> -->
-                <a href="contact.html">contact</a>
+            
+            <span class="burger-menu" onclick="openNav()">&#9776</span>
+
+            <div id="mobile-nav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="index.html">home</a>
+                    <a href="projects.html">projects</a>
+                    <a href="photo.html">photo</a>
+                    <a href="about.html">about</a>
+                    <!-- <a href="updates.html">updates</a> -->
+                    <a id="current-mobile" href="contact.html">contact</a>
+                </div>
             </div>
 
-            <form>
+            <div class="alert">Message sent. Thank you for getting in touch!</div>
+
+            <form id="contactForm">
                 <p>
-                    <input type="text" name="name" placeholder="name *">
+                    <input type="text" name="name" placeholder="name *" id="name" required>
                 </p>
                 <p>
-                    <input type="email" name="email" placeholder="email *">
+                    <input type="email" name="email" placeholder="email *" id="email" required>
                 </p>
                 <p class="full">
-                    <input type="text" name="subject" placeholder="subject">
+                    <input type="text" name="subject" placeholder="subject" id="subject">
                 </p>
                 <p class="full">
-                    <textarea name="body"rows="6" placeholder="if you're a bird, i'm a bird..."></textarea>
+                    <textarea name="body"rows="6" placeholder="if you're a bird, i'm a bird..." id="message"></textarea>
                 </p>
                 <p class="full">
-                    <button>send</button>
+                    <button type="submit">send</button>
                 </p>
 
 
@@ -66,6 +72,24 @@
         </div>
 
     </header>
-    
+    <!-- James's firebase -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/5.5.4/firebase.js"></script> -->
+    <!-- Lauren's firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.5.4/firebase.js"></script>
+
+    <script src="main.js"></script>
+
 </body>
+
+    <!-- MOBILE NAV MENU JS -->
+    <script>
+        function openNav() {
+            document.getElementById("mobile-nav").style.height = "100%";
+        }
+        
+        function closeNav() {
+            document.getElementById("mobile-nav").style.height = "0%";
+        }
+    </script>
+
 </html>

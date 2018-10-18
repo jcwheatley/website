@@ -105,6 +105,10 @@ li.dot{
 }
 
 .video-wrapper video{
+    height: 100%;
+}
+
+.video-wrapper video{
     min-height: 100%;
     min-width: 100%;
 }
@@ -290,6 +294,19 @@ input::placeholder, textarea::placeholder {
     overflow: hidden;
   }
 
+  .alert{
+      text-align: center;
+      font-size: 16px;
+      font-family: Arial, Helvetica, sans-serif;
+      letter-spacing: 1px;
+      padding: 10px;
+      border-radius: 10px;
+      background: #79c879;
+      color: #fff;
+      margin-bottom: 10px;
+      display: none;
+  }
+
 /* PHOTO GALLERY */
 .photo-wrapper{
     z-index: 1;
@@ -328,8 +345,9 @@ input::placeholder, textarea::placeholder {
 }
 
 .left-about{
+    text-align: left;
     width: 40%;
-    padding-left: 12%;
+    padding-left: 7%;
     padding-right: 3%;
     float: left;
     vertical-align: baseline;
@@ -337,6 +355,10 @@ input::placeholder, textarea::placeholder {
 }
 
 .left-about h1{
+    font-size: 60px;
+    letter-spacing: 5px;
+    margin-top: 0;
+    margin-bottom: 0;
     text-transform: uppercase;
     color: #b24837;
     font-family: Arial, Helvetica, sans-serif;
@@ -345,6 +367,13 @@ input::placeholder, textarea::placeholder {
         -ms-animation: fadein 4s; /* Internet Explorer */
          -o-animation: fadein 4s; /* Opera < 12.1 */
             animation: fadein 4s;
+}
+
+.left-about h2{
+    margin-top: 0;
+    margin-bottom: 60px;
+    font-style: italic;
+    font-weight: lighter;
 }
 
 @keyframes fadein{
@@ -458,7 +487,56 @@ label{
     float: right;
 }
 
-#toggle{
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    background-color: rgba(255,255,255, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #8f8f8f;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #CD9B2B;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+.burger-menu{
+    font-size:30px;
+    cursor:pointer;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 40px;
+    padding-right: 20px;
+    z-index: 1;
     display: none;
 }
 
@@ -467,6 +545,29 @@ label{
 @media(max-width:768px){
 
     /* GENERAL MOBILE FUNCTIONALITY AND NAV */
+
+    #current-mobile{
+        color: #CD9B2B;
+    }
+
+    .burger-menu{
+        display: block;
+    }
+
+    .overlay {
+        overflow-y: auto;
+    }
+
+    .overlay a {
+        font-size: 30px;
+        line-height: 55px;
+    }
+  
+    .overlay .closebtn {
+        font-size: 50px;
+        top: 15px;
+        right: 35px;
+    }
 
     .left-panel{
         width: 0%;
@@ -484,46 +585,6 @@ label{
         display: block;
         width: 100%;
         padding: 50% 15% 0 15%;
-    }
-
-    .mobile-menu-icon{
-        position: fixed;
-        top: 0;
-        right: 0;
-        z-index: 1;
-    }
-
-    .mobile-nav{
-        text-align: center;
-        margin: 0 30px 0 0;
-        width: 100%;
-        display: none;
-    }
-
-    .mobile-nav a{
-        display: block;
-        text-decoration: none;
-        color: black;
-        margin: 0 10px;
-        line-height: 70px;
-    }
-
-    label{
-        display: block;
-        cursor: pointer;
-    }
-
-    #toggle:checked + .mobile-nav{
-        display: block;
-        /* background-color: rgba(255,255,255, .75); */
-        background-color: white;
-        height: 100%;
-        padding-top: 25%;
-        font-size: 20px;
-    }
-
-    #toggle:checked + .about-wrapper{
-
     }
 
     /* HOME */
@@ -579,13 +640,16 @@ label{
     /* ABOUT */
 
     .about-wrapper{
-        padding-top: 70px;
         width: 100%;
         left: 0;
     }
 
     .left-about{
         width: 90%;
+    }
+
+    .left-about h2{
+        margin-bottom: 25px;
     }
 
     .right-about img{

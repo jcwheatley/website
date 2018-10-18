@@ -10,40 +10,44 @@
 <body id="grey-theme">
     <header class="v-header container">
         <div class="about-wrapper">
-            <label class="mobile-menu-icon" for="toggle">&#9776</label>
-            <input class="mobile-menu-icon" type="checkbox" id="toggle">
-            <div class="mobile-nav">
-                <a class="current-mobile" href="index.html">home</a>
-                <a href="projects.html">projects</a>
-                <a href="photo.html">photo</a>
-                <a href="about.html">about</a>
-                <!-- <a href="updates.html">updates</a> -->
-                <a href="contact.html">contact</a>
+            
+            <span class="burger-menu" onclick="openNav()">&#9776</span>
+
+            <div id="mobile-nav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="index.html">home</a>
+                    <a href="projects.html">projects</a>
+                    <a href="photo.html">photo</a>
+                    <a id="current-mobile" href="about.html">about</a>
+                    <!-- <a href="updates.html">updates</a> -->
+                    <a href="contact.html">contact</a>
+                </div>
             </div>
 
-                <div class="left-about">
-                    <h1>Hello,</h1>
-                    <h2>it's me...</h2>
-                    <img class="about-img" src="media/ls_portrait.png">
-                    <p><b>lauren steimle.</b></p>
-                    <p>as a designer, i'm especially passionate about creating 
-                        completely custom brands that tell a unique story. my 
-                        expertise lie in full brand identities, website design 
-                        & above all my one true love, print collateral.</p>
-                    <p class="small-paragraph">as a person, i'm passionate about gender equality, mexican 
-                        food, travel & golden retriever puppies. as a native of 
-                        san diego & previous north shore resident, i'm happiest 
-                        in warm climates by the coast. playing and listening to 
-                        live music has always been my therapy & one day i hope 
-                        to find myself at a florence & the machine concert. i 
-                        try to keep myself together but you can usually find me 
-                        laughing at things that aren't meant to funny. </p>
+            <div class="left-about">
+                <h1>Hello,</h1>
+                <h2>it's me...</h2>
+                <img class="about-img" src="media/ls_portrait.png">
+                <p><b>lauren steimle.</b></p>
+                <p>as a designer, i'm especially passionate about creating 
+                    completely custom brands that tell a unique story. my 
+                    expertise lie in full brand identities, website design 
+                    & above all my one true love, print collateral.</p>
+                <p class="small-paragraph">as a person, i'm passionate about gender equality, mexican 
+                    food, travel & golden retriever puppies. as a native of 
+                    san diego & previous north shore resident, i'm happiest 
+                    in warm climates by the coast. playing and listening to 
+                    live music has always been my therapy & one day i hope 
+                    to find myself at a florence & the machine concert. i 
+                    try to keep myself together but you can usually find me 
+                    laughing at things that aren't meant to funny. </p>
 
-                        <p class="small-paragraph"> currently causing ruckus in: washington, d.c. </p>
-                </div>
-                <div class="right-about">
-                    <img src="media/ls_portrait.png">
-                </div>
+                    <p class="small-paragraph"> currently causing ruckus in: washington, d.c. </p>
+            </div>
+            <div class="right-about">
+                <img src="media/ls_portrait.png">
+            </div>
         </div>
         <div class="left-panel" id="grey-theme">
             <div id="branding">
@@ -72,4 +76,16 @@
     </header>
     
 </body>
+
+    <!-- MOBILE NAV MENU JS -->
+    <script>
+        function openNav() {
+            document.getElementById("mobile-nav").style.height = "100%";
+        }
+        
+        function closeNav() {
+            document.getElementById("mobile-nav").style.height = "0%";
+        }
+    </script>
+
 </html>
