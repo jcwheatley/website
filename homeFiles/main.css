@@ -41,7 +41,7 @@ span{
 
 /* ABOUT PAGE */
 .bio{
-  margin-top: 5%;
+  margin-top: 15%;
   margin-left: 10px;
 }
 
@@ -129,7 +129,7 @@ ul.nav{
 	text-decoration: none;
 	text-align:center;
 	margin: auto;
-    color: black;
+  color: black;
 }
 
 .nav a:hover{
@@ -137,23 +137,21 @@ ul.nav{
 }
 
 ul.topnav{
-  padding-left: 0;
-  padding-top: 13px;
+  padding-top: 15px;
   list-style:none;
-  text-align:left;
+  text-align: right;
 }
 
 .topnav li{
   display:inline-block;
-  margin:15;
-  padding:0;
+  padding-right: 15px;
 }
 
 .topnav a{
-	font-size: 25;
+	font-size: 18px;
 	text-decoration: none;
-    display:block;
-    color: black;
+  display: block;
+  color: black;
 }
 
 .topnav a:hover{
@@ -161,8 +159,8 @@ ul.topnav{
 }
 
 .logo{
-	margin: 10px;
-	width: 100px;
+	margin: 5px;
+	width: 75px;
 }
 /* ========== */
 
