@@ -145,18 +145,22 @@ li.dot{
     margin: auto;
 }
 
-.left-column h3{
+.left-column h3.name {
     font-size: 15pt;
     letter-spacing: 5px;    /* KEARNING */
+    text-transform: uppercase;
 }
 
 .left-column .tags{
     font-size: 12pt;
+    letter-spacing: 2px;
     font-style: italic;
+    text-transform: lowercase;
 }
 
 .left-column .site{
     font-size: 12pt;
+    letter-spacing: 2px;
     font-style: italic;
     color: #CD9B2B;
 }
@@ -208,16 +212,26 @@ li.dot{
 
 #arrow-left, #arrow2-left, #arrow3-left, #arrow4-left, #arrow5-left, #arrow6-left, #arrow7-left{
     border-width: 20px 30px 20px 0;
+    transition: border-color 1s ease;
     border-color: transparent #fff transparent transparent;
     left:0;
     margin-left: 15px;
 }
 
+#arrow-left:hover, #arrow2-left:hover, #arrow3-left:hover, #arrow4-left:hover, #arrow5-left:hover, #arrow6-left:hover, #arrow7-left:hover{
+    border-color: transparent #000 transparent transparent;
+}
+
 #arrow-right, #arrow2-right, #arrow3-right, #arrow4-right, #arrow5-right, #arrow6-right, #arrow7-right{
     border-width: 20px 0 20px 30px;
+    transition: border-color 1s ease;
     border-color: transparent transparent transparent #fff;
     right:0;
     margin-right: 15px;
+}
+
+#arrow-right:hover, #arrow2-right:hover, #arrow3-right:hover, #arrow4-right:hover, #arrow5-right:hover, #arrow6-right:hover, #arrow7-right:hover{
+    border-color: transparent transparent transparent #000;
 }
 
 .container{
@@ -333,10 +347,15 @@ input::placeholder, textarea::placeholder {
     transform: scale(1.1);
 }
 
+.thumbnail{
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+}
+
 /* ABOUT */
 
 .about-wrapper{
-    z-index: 1;
     position: absolute;
     top: 100px;
     left: 20%;
@@ -467,6 +486,32 @@ input::placeholder, textarea::placeholder {
 .about-img{
     display: none;
 }
+
+.resume{
+    padding-left: 7%;
+    width: 90%;
+    clear: both;
+    text-align: left;
+}
+
+.normal{
+    margin: 0;
+    font-weight: bold;
+}
+
+p.sub1, p.sub2{
+    margin: 0;
+}
+
+p.sub1{
+    font-style: italic;
+}
+
+p.sub2{
+    margin: 0 0 20px 0;
+}
+
+
 
 /* HIDDEN FOR MOBILE */
 

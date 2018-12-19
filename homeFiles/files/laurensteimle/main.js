@@ -1,6 +1,6 @@
 // Initialize Firebase
   var config = {
-    apiKey: "hidden",
+    apiKey: "AIzaSyDxx3K-Cb219RablzgMFveUzs-fkCU6ZAc",
     authDomain: "contact-form-66589.firebaseapp.com",
     databaseURL: "https://contact-form-66589.firebaseio.com",
     projectId: "contact-form-66589",
@@ -11,7 +11,7 @@
 
 // // Initialize Firebase James' Test Database
 // var config = {
-//     apiKey: "hidden",
+//     apiKey: "AIzaSyA6hLUTjFdo9ZlYse6BivNk_7Asco5I9Po",
 //     authDomain: "ls-contactform.firebaseapp.com",
 //     databaseURL: "https://ls-contactform.firebaseio.com",
 //     projectId: "ls-contactform",
