@@ -13,7 +13,12 @@
 <body class="home-body">
     <header class="v-header container">
         <div class="video-wrapper">
-            <video src="media/ls_video.mp4" autoplay="true" loop="true"></video>
+            <video autoplay loop muted plays-inline>
+                    <!-- MP4 for Safari, IE9, iPhone, iPad, Android, and Windows Phone 7 -->
+                    <source type="video/mp4" src="media/ls_video.mp4"/>
+                    <!-- WebM/VP8 for Firefox4, Opera, and Chrome -->
+                    <source type="video/webm" src="media/ls_video.webm"/>
+            </video>
 
             <span class="burger-menu" onclick="openNav()">&#9776</span>
 
@@ -27,9 +32,11 @@
                     <!-- <a href="updates.html">updates</a> -->
                     <a href="contact.html">contact</a>
                 </div>
+                <br>
+                <p class="copyright-mobile">&copy; Lauren Steimle Designs</p>
             </div>
 
-            <img class="mobile-logo" src="media/ls_logo.png">
+            <img class="mobile-logo" src="files/lauren steimle & designs logos/Logo/LS&D Logo Auburn.png">
         </div>
         <div class="left-panel">
             <div id="branding">
@@ -52,6 +59,7 @@
                     <li class="special"><a href="mailto:hello@laurensteimle.com">hello@laurensteimle.com</a></li>
                     <li class="special">washington, dc</li>
                 </ul>
+                <p class="copyright">&copy; Lauren Steimle Designs</p>
             </div>
         </div>
 

@@ -92,6 +92,23 @@ li.dot{
     margin-left: 55%;
 }
 
+.copyright{
+    margin-top: 0;
+    color: grey;
+    font-size: 12px;
+}
+.copyright-mobile{
+    position:absolute;
+    width:300px;
+    height:20px;
+    bottom:0px;
+    right:25%;
+    left:50%;
+    margin-left:-150px;
+    color: grey;
+    font-size: 15px;
+}
+
 /* HOME */
 
 .video-wrapper{
@@ -127,7 +144,7 @@ li.dot{
 .projects{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width: 100%;
-    padding-left: 9%;
+    padding-left: 5%;
     padding-right: 5%;
     margin-top: 10%;
     display: inline-block;
@@ -140,20 +157,28 @@ li.dot{
 }
 
 .left-column{
-    width: 39%;
+    width: 45%;
     float: left;
     margin: auto;
 }
 
+.left-column img{
+    width: 85%;
+}
+
+img.navy-league{
+    width: 50%;
+}
+
 .left-column h3.name {
     font-size: 15pt;
-    letter-spacing: 5px;    /* KEARNING */
+    letter-spacing: 2px;    /* KEARNING */
     text-transform: uppercase;
 }
 
 .left-column .tags{
-    font-size: 12pt;
-    letter-spacing: 2px;
+    font-size: 10pt;
+    letter-spacing: 1px;
     font-style: italic;
     text-transform: lowercase;
 }
@@ -168,6 +193,9 @@ li.dot{
 .left-column .copy{
     font-size: 12pt;
     color: #8f8f8f;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-bottom: 9%;
 }
 
 .right-column{
@@ -604,8 +632,8 @@ label{
     }
 
     .overlay a {
-        font-size: 30px;
-        line-height: 55px;
+        font-size: 25px;
+        line-height: 50px;
     }
   
     .overlay .closebtn {
@@ -629,7 +657,28 @@ label{
     .mobile-logo{
         display: block;
         width: 100%;
-        padding: 50% 15% 0 15%;
+        padding: 70% 15% 0% 15%;
+    }
+
+    /* IPHONE X */
+    @media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) { 
+        .mobile-logo{
+            display: block;
+            width: 100%;
+            padding: 90% 15% 0% 15%;
+        }
+    }
+
+    /* IPAD */
+    @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+        .mobile-logo{
+            display: block;
+            width: 100%;
+            padding: 50% 15% 0% 15%;
+        }
     }
 
     /* HOME */
@@ -642,7 +691,12 @@ label{
     }
 
     .home-body{
-        background: #CD9B2B;
+        background-image: url(./media/mobileHome.PNG);
+        background-color: rgba(255, 255, 255, 0.8);
+        background-blend-mode: lighten;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
     }
 
     .video-wrapper video{
